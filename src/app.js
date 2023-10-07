@@ -23,14 +23,10 @@ window.onload = function() {
     return arr[Math.round(Math.random() * arr.length)];
   }
 
-  let sentence =
-    randomElement(who) +
-    " " +
-    randomElement(action) +
-    " " +
-    randomElement(what) +
-    " " +
-    randomElement(when);
+  let sentence = `${randomElement(who)} ${randomElement(
+    action
+  )} ${randomElement(what)} 
+  ${randomElement(when)}`;
 
   console.log("start", sentence);
 
