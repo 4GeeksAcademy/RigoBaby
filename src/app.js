@@ -23,7 +23,7 @@ window.onload = function() {
     return arr[Math.round(Math.random() * arr.length)];
   }
 
-  let excuse =
+  let sentence =
     randomElement(who) +
     " " +
     randomElement(action) +
@@ -32,9 +32,9 @@ window.onload = function() {
     " " +
     randomElement(when);
 
-  console.log("start", excuse);
+  console.log("start", sentence);
 
   const paraElement = document.getElementsByTagName("p");
 
-  paraElement[0].innerText = excuse;
+  paraElement[0].innerText = sentence;
 };
